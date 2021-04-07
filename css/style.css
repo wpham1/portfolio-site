@@ -33,6 +33,32 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Projects section */
+#projects {
+    background-color:#eee;
+    min-height: 400px;
+}
+#projects h2{
+    margin: 20px;
+    text-align: center;
+}
+#projects a{
+    position: relative;
+    bottom: 10px;
+    padding: 33%;
+}
+
+#projects{
+    background-color: white;
+    margin: 10px;
+    min-height: 250px;
+}
+
+#projects img{
+    width: 100%;
+}
+
+
 /* responsive media queries */
 /* For mobile phones: */
 [class*="col-"] {
@@ -55,6 +81,11 @@
     .col-s-12 {width: 100%;}
     .row p{font-size: 1.75em;}
     .title{font-size: 3em;}
+    .project h2, a{font-size: 2em;}
+    #projects{min-height: 1900px;}
+    .project img{min-height:300px;}
+    .project h2, a {font-size: 1.3em;}
+    #projects{min-height: 600px;}
   }
   @media only screen and (min-width: 769px) {
       /* anything beyond 769px */

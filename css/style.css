@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* profile section */
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+.row img {
+    width: 50%;
+    margin: 0 25%;
+}
+
+.row p {
+    margin: 20px;
+    color: red;
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* responsive media queries */
@@ -24,8 +53,11 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+    .row p{font-size: 1.75em;}
+    .title{font-size: 3em;}
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
+      /* anything beyond 769px */
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -39,4 +71,6 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .container{margin: 0px 15px;}
+    .row img{width: 70%;}
   }
